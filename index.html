@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+  <title>Circular Countdown Timer</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="titleHeader">
+      <br>
+        <h2>Routine Start in .....</h2>
+        <p>Subheading here</p>
+    </div>
+  <div class="timer-container">
+    <div class="progress-ring">
+      <svg class="progress" width="200" height="200">
+        <circle class="progress-bar" cx="100" cy="100" r="90"></circle>
+      </svg>
+      <div class="timer">
+        <span id="timer-text">00:00</span>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="add-10-secs" class="btn">+ 10 Sec</button>
+      <button id="reset-timer" class="btn"><img src="play-next-button.png" alt=""> Skip</button>
+    </div>
+    <div id="cleansing">
+        <div>
+            <p><span class="bold">Step 2</span>/3</p>
+        </div>
+        <div id="cleansingBox">
+            <img src="clean.png" alt="Pic">
+            <div>
+                <h4>Cleansing</h4>
+                <div id="CleansingTime">
+                    <p>60 sec</p>
+                    <a href="">How to do</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
